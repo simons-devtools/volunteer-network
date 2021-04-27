@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -9,9 +10,9 @@ const Header = () => {
                 <Navbar.Brand href="#">VolunteerNetx</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#tool">Tools</Nav.Link>
-                        <Nav.Link href="#project">Projects</Nav.Link>
+                    <Nav className="mr-auto link-control">
+                        <Nav.Link><Link to="/home">Home</Link></Nav.Link>
+                        <Nav.Link><Link to="/add-events">Add-Events</Link></Nav.Link>
                         <NavDropdown title="Services" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#drop1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#drop2">Another action</NavDropdown.Item>
@@ -19,11 +20,12 @@ const Header = () => {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#drop4">Separated link</NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Link><Link to="/dashboard">Dashboard</Link></Nav.Link>
                     </Nav>
-                    <Nav>
-                        <Nav.Link eventKey={1} href="#learn">Learn-more</Nav.Link>
-                        <Nav.Link eventKey={2} href="#feature">Features</Nav.Link>
-                        <Nav.Link eventKey={3} href="#documentation">Documentation</Nav.Link>
+                    <Nav className="link-control">
+                        <Nav.Link><Link to="/learn-more">Learn-more</Link></Nav.Link>
+                        <Nav.Link><Link to="/features">Features</Link></Nav.Link>
+                        <Nav.Link><Link to="/documentation">Documentation</Link></Nav.Link>
                         <Nav.Link href="#deets">
                             <button className="simple-btn">Register</button>
                             <button className="simple-btn">Admin</button>

@@ -7,12 +7,26 @@
 }
 
 .simple-btn:hover {
-    color: black;
-    background-color: #cbdfdf;
+    color: azure;
+    background-color: #007BFF;
 }
 
 .simple-btn:focus {
     color: #a5b1b1;
     background-color: transparent;
     border-style: outset;
+}
+
+.link-control a {
+    color: #a5a5a5;
+    text-decoration: none;
+}
+
+.link-control a:hover {
+    color: #ffffffbf;
+}
+
+.link-control a:focus {
+    color: azure;
+    border-bottom: 1px solid azure;
 }
