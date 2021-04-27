@@ -1,18 +1,25 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import Logo from '../../images/logos/logo.png';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                <Navbar.Brand href="#">VolunteerNetx</Navbar.Brand>
+        <Container>
+            <Navbar collapseOnSelect expand="md">
+                <Navbar.Brand>
+                    <Link to="/home"><img src={Logo} className="logo" alt="logo" /></Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto link-control">
-                        <Nav.Link><Link to="/home">Home</Link></Nav.Link>
-                        <Nav.Link><Link to="/add-events">Add-Events</Link></Nav.Link>
+                        {/* <Link to="/features">Features</Link> */}
+                        {/* <Link to="/documentation">Documentation</Link> */}
+                    </Nav>
+                    <Nav className="link-control">
+                        <Link to="/home">Home</Link>
+                        <Link to="/add-events">Add-Events</Link>
                         <NavDropdown title="Services" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="#drop1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#drop2">Another action</NavDropdown.Item>
@@ -20,20 +27,15 @@ const Header = () => {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#drop4">Separated link</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link><Link to="/dashboard">Dashboard</Link></Nav.Link>
-                    </Nav>
-                    <Nav className="link-control">
-                        <Nav.Link><Link to="/learn-more">Learn-more</Link></Nav.Link>
-                        <Nav.Link><Link to="/features">Features</Link></Nav.Link>
-                        <Nav.Link><Link to="/documentation">Documentation</Link></Nav.Link>
-                        <Nav.Link href="#deets">
+                        <Link to="/dashboard">Dashboard</Link>
+                        <Nav.Link>
                             <button className="simple-btn">Register</button>
                             <button className="simple-btn">Admin</button>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-        </div>
+        </Container>
     );
 };
 

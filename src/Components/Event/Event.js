@@ -7,7 +7,7 @@ const Event = (props) => {
 
 
     return (
-        <div className="volt-sec mb-5">
+        <div className="volt-sec">
             <img src={photo} alt="volunteer-img" />
             <h5>{title}</h5>
         </div>

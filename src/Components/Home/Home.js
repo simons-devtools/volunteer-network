@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import './Home.css';
 import Volunteer from '../Event/Event';
+import './Home.css';
 
 const Home = () => {
     const volunteers = [
@@ -18,20 +18,19 @@ const Home = () => {
     ];
 
     return (
-        <div className="main">
-            <Container fluid>
-                <div className="text-center mt-5 search">
-                    <h2>WE GROW BY HELPING PEOPLE IN NEED</h2>
-                    <input type="text" placeholder="type something. . ." className="search-control" />
-                    <input type="submit" value="Search" />
-                </div>
-                <div className="event-container">
-                    {
-                        volunteers.map(volt => <Volunteer volunteer={volt} key={volt.id} />)
-                    }
-                </div>
-            </Container>
-        </div>
+        <Container>
+            <div className="text-center mt-5 search">
+                <h2>WE GROW BY HELPING PEOPLE IN NEED</h2>
+                <input type="text" placeholder="type something. . ." className="search-control" />
+                <input type="submit" value="Search" />
+            </div>
+
+            <div className="event-container">
+                {
+                    volunteers.map(volt => <Volunteer volunteer={volt} key={volt.id} />)
+                }
+            </div>
+        </Container>
     );
 };
 

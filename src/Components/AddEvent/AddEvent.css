@@ -1,0 +1,22 @@
+.addEvent-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-bar {
+    width: 33%;
+    padding: 20px 30px;
+}
+
+.pannel-out {
+    width: 64%;
+    height: 650px;
+    background-color: #fcf9f9;
+}
+
+.pannel-in {
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px 50px;
+    background-color: #fff;
+}

@@ -6,8 +6,9 @@
 .volt-sec {
     border: 1px solid #96a1a1;
     border-radius: 5px;
-    padding: 5px 5px;
+    /* padding: 5px 5px; */
     background-color: #f4fafa;
+    margin: 20px 5px;
 }
 
 .volt-sec:hover {

@@ -1,32 +1,36 @@
+.logo {
+    height: 50px;
+}
+
 .simple-btn {
-    color: #a5b1b1;
-    border: 1px solid #96a1a1;
+    color: #a1a1a1;
+    border: 1px solid #a1a1a1;
     margin-right: 10px;
     background-color: transparent;
-    font-weight: 400;
 }
 
 .simple-btn:hover {
-    color: azure;
-    background-color: #007BFF;
+    color: #000;
 }
 
 .simple-btn:focus {
-    color: #a5b1b1;
-    background-color: transparent;
-    border-style: outset;
+    color: azure;
+    background-color: #007BFF;
+    border: 1px solid #000;
+    border-style: dotted;
 }
 
 .link-control a {
-    color: #a5a5a5;
+    color: #a1a1a1;
     text-decoration: none;
+    padding: 0 10px;
 }
 
 .link-control a:hover {
-    color: #ffffffbf;
+    color: #000;
 }
 
 .link-control a:focus {
-    color: azure;
-    border-bottom: 1px solid azure;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
