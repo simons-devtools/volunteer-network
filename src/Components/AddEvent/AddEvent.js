@@ -18,7 +18,7 @@ const AddEvent = () => {
             imageURL: imageURL
         };
         const url = `http://localhost:5000/addEvent`;
-        console.log(eventData)
+        // console.log(eventData)
         fetch(url, {
             method: 'POST',
             headers: {
@@ -26,7 +26,7 @@ const AddEvent = () => {
             },
             body: JSON.stringify(eventData)
         })
-            .then(res => console.log('server side response', res));
+            // .then(res => console.log('server side response', res));
     };
 
     const handleImageUpload = (event) => {
@@ -39,6 +39,7 @@ const AddEvent = () => {
         axios.post('https://api.imgbb.com/1/upload', imageData)
             .then(function (response) {
                 setImageURL(response.data.data.display_url);
+                // console.log(response.data.data.display_url);
             })
             .catch(function (error) {
                 console.log(error);
