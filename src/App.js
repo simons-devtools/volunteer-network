@@ -5,10 +5,9 @@ import Home from './Components/Home/Home';
 
 function App() {
   return (
-    <div>
-      <h1>Hello Volunteer Network!!</h1>
-      {/* <Header></Header>
-      <Home></Home> */}
+    <div className="App">
+      <Header></Header>
+      <Home></Home>
     </div>
   );
 }

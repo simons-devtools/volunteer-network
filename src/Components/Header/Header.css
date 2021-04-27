@@ -1,0 +1,18 @@
+.simple-btn {
+    color: #a5b1b1;
+    border: 1px solid #96a1a1;
+    margin-right: 10px;
+    background-color: transparent;
+    font-weight: 400;
+}
+
+.simple-btn:hover {
+    color: black;
+    background-color: #cbdfdf;
+}
+
+.simple-btn:focus {
+    color: #a5b1b1;
+    background-color: transparent;
+    border-style: outset;
+}

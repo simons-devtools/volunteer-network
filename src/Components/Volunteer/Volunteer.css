@@ -1,0 +1,19 @@
+.volt-sec img {
+    height: 150px;
+}
+
+.volt-container {
+    margin-bottom: 200px;
+}
+
+.volt-container .volt-sec {
+    border: 1px solid #96a1a1;
+    border-radius: 5px;
+    padding: 5px 5px;
+    background-color: #f4fafa;
+}
+
+.volt-container .volt-sec:hover {
+    background-color: #dcfcfc;
+    box-shadow: 2px 1px red;
+}
