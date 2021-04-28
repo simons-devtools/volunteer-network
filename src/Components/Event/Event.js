@@ -19,13 +19,14 @@ const Event = (props) => {
     }
 
     return (
-        <div>
-            <div className="volt-sec">
-                <img src={imageURL} alt="volunteer-img" className="event-img" />
-                <div className="">
-                    <p className="head-line">{name} <img onClick={() => deleteEvent(_id)} src={Trush} alt="Trush-icon" /></p>
-                    <img onClick={() => updateEvent(_id)} src={PlusAlt} className="plush" alt="plus-alt" />
-                </div>
+        <div className="events-sec">
+            <div className="event">
+                <img src={imageURL} className="event-img" alt="volunteer-img" />
+                <h5 className="event-title">{name}</h5>
+            </div>
+            <div className="event-hover">
+                <img onClick={() => updateEvent(_id)} src={PlusAlt} className="plush" alt="plus-alt" />
+                <img onClick={() => deleteEvent(_id)} src={Trush} className="trush" alt="Trush-icon" />
             </div>
         </div>
     );
