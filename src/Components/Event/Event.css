@@ -4,18 +4,41 @@
     background-color: #6cc2c2;
     margin: 20px 5px;
     text-align: center;
+    position: relative;
 }
 
-.volt-sec img {
+.event-img {
     height: 300px;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
-.volt-sec p {
+.head-line {
     padding: 5px 0;
     font-weight: 700;
 }
 
-.volt-sec p img {
+.head-line img {
     height: 20px;
     cursor: pointer;
+}
+
+.plush {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: azure;
+    border: 1px solid #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.volt-sec:hover .event-img {
+    opacity: 0.3;
+}
+
+.volt-sec:hover .plush {
+    opacity: 1;
 }
