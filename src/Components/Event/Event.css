@@ -1,17 +1,21 @@
-.volt-sec img {
-    width: 265px;
-    height: 150px;
-}
-
 .volt-sec {
-    border: 1px solid #96a1a1;
     border-radius: 5px;
-    /* padding: 5px 5px; */
-    background-color: #f4fafa;
+    color: azure;
+    background-color: #6cc2c2;
     margin: 20px 5px;
+    text-align: center;
 }
 
-.volt-sec:hover {
-    background-color: #dcfcfc;
-    box-shadow: 2px 1px #007BFF;
+.volt-sec img {
+    height: 300px;
+}
+
+.volt-sec p {
+    padding: 5px 0;
+    font-weight: 700;
+}
+
+.volt-sec p img {
+    height: 20px;
+    cursor: pointer;
 }

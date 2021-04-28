@@ -1,15 +1,18 @@
 import React from 'react';
+import Trush from '../../images/logos/trash.png';
 import './Event.css';
 
 const Event = (props) => {
-    // console.log(props.events);
-    const { name, imageURL } = props.events;
+    const { _id, name, imageURL } = props.events;
 
+    const deleteEvent = (event) => {
+        console.log('ID NO=', event);
+    }
 
     return (
         <div className="volt-sec">
             <img src={imageURL} alt="volunteer-img" />
-            <h5>{name}</h5>
+            <p>{name} <img onClick={() => deleteEvent(_id)} src={Trush} alt="Trush-icon" /></p>
         </div>
     );
 };

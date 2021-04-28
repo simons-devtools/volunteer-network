@@ -6,12 +6,14 @@
 .side-bar {
     width: 33%;
     padding: 20px 30px;
+    margin-top: 20px;
+    border-left: 1px solid #f5f0f0;
 }
 
 .pannel-out {
     width: 64%;
     height: 650px;
-    background-color: #fcf9f9;
+    background-color: #f7ffff;
 }
 
 .pannel-in {

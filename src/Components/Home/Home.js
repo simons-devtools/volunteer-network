@@ -11,7 +11,6 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setEvents(data))
     }, [])
-    // console.log(events);
 
     return (
         <Container>
